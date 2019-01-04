@@ -1,0 +1,10 @@
+@import 'config';
+@import 'components/all';
+
+body {
+  margin: none;
+  padding: none;
+  background-color: $background-color;
+  color: $secondary-color;
+  font-family: 'Karla', sans-serif;
+}

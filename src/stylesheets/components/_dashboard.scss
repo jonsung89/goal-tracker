@@ -1,0 +1,24 @@
+.dashboard {
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: 1em;
+      font-weight: 400;
+      color: $primary-color;
+      margin-top: 30px;
+    }
+  
+    form.goal-form {
+      margin: 10px 10px;
+    
+      input[type="text"] {
+        margin: 0px 10px;
+        width: 50%;
+        height: 20px;
+      }
+    }
+  }
+}
+
