@@ -5,7 +5,7 @@ export default class Dashboard extends Component {
   constructor(props){
     super(props);
     this.state = {
-      goals: ['read 30 books this year']
+      goals: ['Read 30 books this year']
     }
   }
 
@@ -19,9 +19,9 @@ export default class Dashboard extends Component {
   render() {
     const {goals} = this.state;
 
-    const listGoal = goals.map(goal => {
+    const listGoal = goals.map((goal, i) => {
       return (
-        <li>{goal}</li>
+        <div className="goal-box" key={i}>{goal}</div>
       )
     })
 
@@ -32,9 +32,10 @@ export default class Dashboard extends Component {
           <Form triggerUpdate={(e) => this.updateGoals(e)} />
         </div>
         <div className="goal-list">
-          <ul>
-            {listGoal}
-          </ul>
+          <div className="my-goals">
+            <span>MY GOALS<div className="bottom-border"></div></span>
+          </div>
+          {listGoal}
         </div>
       </div>
     )

@@ -2,12 +2,12 @@
   .form {
     display: flex;
     flex-direction: column;
+    margin: 20px 0;
 
     h3 {
       font-size: 1em;
       font-weight: 400;
       color: $primary-color;
-      margin-top: 30px;
     }
   
     form.goal-form {
@@ -22,3 +22,34 @@
   }
 }
 
+.goal-list {
+  background-color: #2c323f;
+  min-height: 50vh;
+  margin-top: 20px;
+  padding: 20px;
+
+  .my-goals {
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    
+    span {
+      .bottom-border {
+        margin-top: 5px;
+        height: 5px;
+        background-image: linear-gradient(to right, #88DBDF, #8988DF);
+      }
+    }
+  }
+
+  .goal-box {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #3E5776;
+    border-radius: 15px;
+    margin: 10px 20px;
+    height: 80px;
+    color: $primary-color;
+    font-weight:100;
+  }
+}

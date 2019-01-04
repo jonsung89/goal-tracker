@@ -2,9 +2,10 @@
 @import 'components/all';
 
 body {
-  margin: none;
-  padding: none;
+  margin: 0;
+  padding: 0;
   background-color: $background-color;
   color: $secondary-color;
-  font-family: 'Karla', sans-serif;
+  // font-family: 'Karla', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
