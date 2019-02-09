@@ -1,3 +1,5 @@
+// App + Header + Footer 
+
 .App {
   text-align: center;
   display: flex;
@@ -6,13 +8,50 @@
 }
 
 header {
-  font-size: calc(10px + 2vmin);
+  // font-size: calc(10px + 2vmin);
+  height: 70px;
+  width: 100%;
   background-color: #F4F7F6;
-  h1 {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+
+  .box-left {
+    float: left;
+    min-width: 80px;
+    height: 70px;
+    border-right: 1px solid rgb(214, 216, 216);
     color: #202121;
-    font-weight: bold;
-    font-size: 1.2em;
-    margin: 15px;
-    text-transform: lowercase;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    .item {
+      margin: 25px auto;
+      font-size: 13px;
+    }
+  }
+
+  .logo-header{
+    width: calc(100%);
+
+    h1 {
+      color: #414141;
+      font-size: 1.5em;
+      letter-spacing: -2px;
+      margin: 20px auto;
+      text-transform: lowercase;
+      span.secondary-color {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .box-right {
+    float: right;
+    min-width: 80px;
+    height: 70px;
+    // background-color: black;
+    border-left: 1px solid rgb(214, 216, 216);
   }
 }
