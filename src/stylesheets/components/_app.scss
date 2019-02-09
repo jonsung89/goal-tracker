@@ -7,10 +7,12 @@
 
 header {
   font-size: calc(10px + 2vmin);
-  background-color: #dddddd;
+  background-color: #F4F7F6;
   h1 {
-    color: #3E5776;
-    font-weight: 300;
-    font-size: 1.5em;
+    color: #202121;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 15px;
+    text-transform: lowercase;
   }
 }
