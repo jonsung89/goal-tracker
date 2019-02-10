@@ -13,7 +13,7 @@ export default class Navbar extends Component {
           <div className="menu">MENU</div>
         </div>
         <div className="logo-header">
-          <h1>Goal Tracker<span className="secondary-color">.</span></h1>
+          <a href="/"><h1>Goal Tracker<span className="secondary-color">.</span></h1></a>
         </div>
         <div className="box-right">
           <div className="add"></div>
