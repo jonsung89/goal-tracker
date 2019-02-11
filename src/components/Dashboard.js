@@ -11,7 +11,11 @@ export default class Dashboard extends Component {
     }
   }
   componentDidMount() {
-    fetch(`${API_BASE_URL}/goals/test`)
+    // fetch(`${API_BASE_URL}/goals/test`)
+    //   .then(res => {
+    //     console.log(res.json());
+    //   })
+    fetch(`${API_BASE_URL}/test`)
       .then(res => {
         console.log(res.json());
       })
