@@ -11,15 +11,21 @@ export default class Dashboard extends Component {
     }
   }
   componentDidMount() {
-    // fetch(`${API_BASE_URL}/goals/test`)
+    // fetch(`${API_BASE_URL}/test`)
     //   .then(res => {
     //     console.log(res.json());
     //   })
-    fetch(`${API_BASE_URL}/test`)
-      .then(res => {
-        console.log(res.json());
-      })
+    this.callApi()
+      .then(res => console.log(res.msg))
+      .catch(err => console.log(err))
   }
+
+  callApi = async () => {
+    const response = await fetch(`${API_BASE_URL}/test`);
+    const body = await response.json();
+    if (response.status !== 200) throw Error(body.message);
+    return body;
+  };
 
   updateGoals(goal) {
     // console.log('goal is: ', goal);
