@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Form from './Form'
+import { API_BASE_URL } from '../config';
 
 export default class Dashboard extends Component {
   constructor(props){
@@ -8,6 +9,12 @@ export default class Dashboard extends Component {
       // goals: ['Read 30 books this year']
       goals: []
     }
+  }
+  componentDidMount() {
+    fetch(`${API_BASE_URL}/goals/test`)
+      .then(res => {
+        console.log(res.json());
+      })
   }
 
   updateGoals(goal) {
